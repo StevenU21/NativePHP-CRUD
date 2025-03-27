@@ -97,7 +97,7 @@
                     @click="toggleProfileMenu" @keydown.escape="closeProfileMenu" aria-label="Account"
                     aria-haspopup="true">
                     <img class="object-cover w-8 h-8 rounded-full"
-                        src="https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82"
+                        src="https://lh3.googleusercontent.com/ogw/AF2bZyincSVrNzgq9dYQnzynGd2UHkPGxCMAWKZogxxCVA0Mqg=s64-c-mo"
                         alt="" aria-hidden="true" />
                 </button>
                 <template x-if="isProfileMenuOpen">
@@ -148,4 +148,3 @@
         </ul>
     </div>
 </header>
-    
