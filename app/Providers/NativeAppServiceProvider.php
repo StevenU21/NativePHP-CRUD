@@ -16,6 +16,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
         Window::open()
         ->title('Windmill')
         ->hideMenu(true)
+        ->showDevTools(false)
         ->width(1280)
         ->height(720);
     }
