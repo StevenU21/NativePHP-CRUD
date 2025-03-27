@@ -24,6 +24,9 @@
     ></script>
     <script src="{{ asset('js/charts-lines.js')}}" defer></script>
     <script src="{{ asset('js/charts-pie.js')}}" defer></script>
+    <script src="{{ asset('js/charts-bars.js')}}" defer></script>
+    <script src="{{ asset('js/focus-trap.js')}}" defer></script>
+    <script src="{{ asset('js/init-alpine.js')}}" defer></script>
   </head>
   <body>
     <div
