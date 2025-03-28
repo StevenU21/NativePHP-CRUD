@@ -9,7 +9,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        $categories = Category::latest()->paginate(5);
+        $categories = Category::latest()->paginate(10);
         return view('categories.index', compact('categories'));
     }
 
@@ -40,13 +40,13 @@ class CategoryController extends Controller
     {
         $category->update($request->validated());
 
-        return redirect()->route('categories.index')->with('success', 'Categoria actualizada correctamente.');
+        return redirect()->route('categories.index')->with('updated', 'Categoria actualizada correctamente.');
     }
 
     public function destroy(Category $category)
     {
         $category->delete();
 
-        return redirect()->route('categories.index')->with('success', 'Categoria eliminada correctamente.');
+        return redirect()->route('categories.index')->with('deleted', 'Categoria eliminada correctamente.');
     }
 }
