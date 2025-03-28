@@ -27,16 +27,4 @@ class CategoryRequest extends FormRequest
             'description' => ['nullable', 'string', 'min:10', 'max:255'],
         ];
     }
-
-    public function messages(): array
-    {
-        return [
-            'name.required' => 'El nombre es requerido.',
-            'name.min' => 'El nombre debe tener al menos :min caracteres.',
-            'name.max' => 'El nombre no debe exceder los :max caracteres.',
-            'name.unique' => 'El nombre ya está en uso.',
-            'description.min' => 'La descripción debe tener al menos :min caracteres.',
-            'description.max' => 'La descripción no debe exceder los :max caracteres.',
-        ];
-    }
 }

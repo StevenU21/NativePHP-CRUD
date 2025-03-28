@@ -7,7 +7,7 @@
         </h2>
 
         <!-- Success Messages -->
-         <x-session-messages />
+        <x-session-messages />
         <!-- End Success Messages -->
 
         <div class="flex justify-end mb-4">
@@ -62,23 +62,27 @@
                                 <td class="px-4 py-3">
                                     <div class="flex items-center space-x-4 text-sm">
 
-                                        <button
+                                        <a href="{{ route('categories.show', $category->id) }}"
                                             class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                                             aria-label="Show">
                                             <i class="fas fa-eye"></i>
-                                        </button>
+                                        </a>
 
-                                        <button
+                                        <a href="{{ route('categories.edit', $category->id) }}"
                                             class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
                                             aria-label="Edit">
                                             <i class="fas fa-edit"></i>
-                                        </button>
+                                        </a>
 
-                                        <button
-                                            class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
-                                            aria-label="Delete">
-                                            <i class="fas fa-trash"></i>
-                                        </button>
+                                        <form action="{{ route('categories.destroy', $category->id) }}" method="POST" class="inline">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit"
+                                                class="flex items-center justify-between px-2 py-2 text-sm font-medium leading-5 text-purple-600 rounded-lg dark:text-gray-400 focus:outline-none focus:shadow-outline-gray"
+                                                aria-label="Delete" onclick="return confirm('Are you sure you want to delete this category?')">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
