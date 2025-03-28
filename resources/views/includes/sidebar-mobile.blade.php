@@ -32,7 +32,7 @@
         </ul>
         <ul>
             <!-- Components Dropdown -->
-            <li class="relative px-6 py-3" x-data="{ isOpen: false }">
+            <li class="relative px-6 py-3" x-data="{ isOpen: {{ Route::is('forms', 'cards', 'charts', 'buttons', 'modals', 'tables') ? 'true' : 'false' }} }">
                 <button
                     class="inline-flex items-center justify-between w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 focus:outline-none"
                     @click="isOpen = !isOpen" aria-haspopup="true">
