@@ -23,6 +23,7 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       defer
     ></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="{{ asset('js/charts-lines.js')}}" defer></script>
     <script src="{{ asset('js/charts-pie.js')}}" defer></script>
     <script src="{{ asset('js/charts-bars.js')}}" defer></script>
