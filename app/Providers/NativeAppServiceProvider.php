@@ -14,7 +14,7 @@ class NativeAppServiceProvider implements ProvidesPhpIni
     public function boot(): void
     {
         Window::open()
-        ->title('Windmill')
+        ->title('PHP Native App')
         ->hideMenu(true)
         ->showDevTools(false)
         ->width(1280)
