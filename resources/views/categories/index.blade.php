@@ -25,7 +25,7 @@
                             <th class="px-4 py-3">ID</th>
                             <th class="px-4 py-3">Name</th>
                             <th class="px-4 py-3">Description</th>
-                            <th class="px-4 py-3">Register Date </th>
+                            <th class="px-4 py-3">Register Date</th>
                             <th class="px-4 py-3">Actions</th>
                         </tr>
                     </thead>
@@ -45,7 +45,7 @@
                                     {{ $category->description }}
                                 </td>
                                 <td class="px-4 py-3 text-sm">
-                                    {{ $category->created_at}}
+                                    {{ $category->created_at }}
                                 </td>
                                 <td class="px-4 py-3">
                                     <div class="flex items-center space-x-4 text-sm">
@@ -73,7 +73,9 @@
                         @endforeach
                     </tbody>
                 </table>
-                {{ $categories->links() }}
+            </div>
+            <div>
+                {{ $categories->links('vendor.pagination.tailwind') }}
             </div>
         </div>
     </div>
