@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,3 +41,5 @@ Route::get('/modals', function () {
 Route::get('/tables', function () {
     return view('sidebar/tables');
 })->name('tables');
+
+Route::resource('categories', CategoryController::class);
