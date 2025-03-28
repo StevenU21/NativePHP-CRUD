@@ -16,8 +16,7 @@
                     {{-- Previous Page Link --}}
                     @if ($paginator->onFirstPage())
                         <li>
-                            <button
-                                class="px-3 py-1 rounded-md rounded-l-lg focus:outline-none focus:shadow-outline-purple"
+                            <button class="px-3 py-1 rounded-md rounded-l-lg focus:outline-none focus:shadow-outline-purple"
                                 aria-label="Previous" disabled>
                                 <svg aria-hidden="true" class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                                     <path
@@ -61,8 +60,7 @@
                                     </li>
                                 @else
                                     <li>
-                                        <a href="{{ $url }}"
-                                            class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">
+                                        <a href="{{ $url }}" class="px-3 py-1 rounded-md focus:outline-none focus:shadow-outline-purple">
                                             {{ $page }}
                                         </a>
                                     </li>
@@ -86,8 +84,7 @@
                         </li>
                     @else
                         <li>
-                            <button
-                                class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple"
+                            <button class="px-3 py-1 rounded-md rounded-r-lg focus:outline-none focus:shadow-outline-purple"
                                 aria-label="Next" disabled>
                                 <svg class="w-4 h-4 fill-current" aria-hidden="true" viewBox="0 0 20 20">
                                     <path
