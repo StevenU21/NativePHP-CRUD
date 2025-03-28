@@ -45,42 +45,57 @@
                     x-transition:leave-end="opacity-0 transform scale-95"
                     class="mt-2 space-y-2 overflow-hidden text-sm font-medium text-gray-500 dark:text-gray-400">
                     <li class="px-6 py-2">
-                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 {{ Route::is('forms') ? 'text-gray-800 dark:text-gray-100' : '' }}"
                             href="{{ route('forms') }}">
                             <i class="fas fa-file-alt w-5 h-5"></i>
                             <span class="ml-4">Forms</span>
                         </a>
                     </li>
                     <li class="px-6 py-2">
-                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        <span
+                            class="{{ Route::is('cards') ? 'absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg' : '' }}"
+                            aria-hidden="true"></span>
+                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 {{ Route::is('cards') ? 'text-gray-800 dark:text-gray-100' : '' }}"
                             href="{{ route('cards') }}">
                             <i class="fas fa-id-card w-5 h-5"></i>
                             <span class="ml-4">Cards</span>
                         </a>
                     </li>
                     <li class="px-6 py-2">
-                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        <span
+                            class="{{ Route::is('charts') ? 'absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg' : '' }}"
+                            aria-hidden="true"></span>
+                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 {{ Route::is('charts') ? 'text-gray-800 dark:text-gray-100' : '' }}"
                             href="{{ route('charts') }}">
                             <i class="fas fa-chart-pie w-5 h-5"></i>
                             <span class="ml-4">Charts</span>
                         </a>
                     </li>
                     <li class="px-6 py-2">
-                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        <span
+                            class="{{ Route::is('buttons') ? 'absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg' : '' }}"
+                            aria-hidden="true"></span>
+                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 {{ Route::is('buttons') ? 'text-gray-800 dark:text-gray-100' : '' }}"
                             href="{{ route('buttons') }}">
                             <i class="fas fa-mouse-pointer w-5 h-5"></i>
                             <span class="ml-4">Buttons</span>
                         </a>
                     </li>
                     <li class="px-6 py-2">
-                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        <span
+                            class="{{ Route::is('modals') ? 'absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg' : '' }}"
+                            aria-hidden="true"></span>
+                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 {{ Route::is('modals') ? 'text-gray-800 dark:text-gray-100' : '' }}"
                             href="{{ route('modals') }}">
                             <i class="fas fa-window-maximize w-5 h-5"></i>
                             <span class="ml-4">Modals</span>
                         </a>
                     </li>
                     <li class="px-6 py-2">
-                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        <span
+                            class="{{ Route::is('tables') ? 'absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg' : '' }}"
+                            aria-hidden="true"></span>
+                        <a class="inline-flex items-center w-full transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 {{ Route::is('tables') ? 'text-gray-800 dark:text-gray-100' : '' }}"
                             href="{{ route('tables') }}">
                             <i class="fas fa-table w-5 h-5"></i>
                             <span class="ml-4">Tables</span>
