@@ -14,12 +14,12 @@
 
     @if (session('updated'))
         <div x-data="{ show: true }" x-show="show"
-            class="relative mb-4 text-sm font-medium text-blue-700 bg-blue-100 rounded-lg dark:bg-blue-700 dark:text-blue-100 px-4 py-3 flex items-center justify-between">
+            class="relative mb-4 text-sm font-medium text-green-700 bg-green-100 rounded-lg dark:bg-green-700 dark:text-green-100 px-4 py-3 flex items-center justify-between">
             <div>
                 <i class="fas fa-info-circle mr-2"></i> {{ session('updated') }}
             </div>
             <button @click="show = false"
-                class="text-blue-700 dark:text-blue-100 hover:text-blue-900 dark:hover:text-blue-300 focus:outline-none transition-colors duration-150">
+                class="text-green-700 dark:text-green-100 hover:text-green-900 dark:hover:text-green-300 focus:outline-none transition-colors duration-150">
                 <i class="fas fa-times"></i>
             </button>
         </div>
